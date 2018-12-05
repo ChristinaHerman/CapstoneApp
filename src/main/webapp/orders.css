@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 0.7em;
+    /*display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flex;
+    -ms-flex:auto;
+    -webkit-flex:auto;
+    flex:auto; */
+    -ms-flex-wrap:wrap;
+    -webkit-flex-wrap:wrap;
+    flex-wrap:wrap;
+    justify-content: center;
+
+
+}
+/* Nav Bar */
+/* The navigation bar */
+.navbar {
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: flex-start;
+    background-color: darkorange;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    padding: 0 0 2% 0;
+}
+
+h2 {
+    color: white;
+    font-size: 150%;
+    margin: 1em auto 0 auto;
+    text-align: center;
+    font-weight: lighter;
+}
+
+h1 {
+    color: white;
+    font-size: 200%;
+    padding: .2em 0 0 0;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    font-family: 'Arvo', serif;
+}
+
+p{
+    text-align: center;
+    font-family: 'Arvo', serif;
+}
+
+
+/* Links inside the navbar */
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding:0 1.3em;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+/* Change background on mouse-over */
+.flex-container .navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Main content */
+.main {
+    margin-top: 25%; /* Add a top margin to avoid content overlay */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 4em; /* space between header and buttons
+    /*align-content: inherit;
+    align-items: baseline;
+    /*position: relative;
+    /*width: 80%;
+    margin: 110px auto 40px auto;
+    align-content: center;
+    position: fixed;
+    flex-wrap: wrap;*/
+}
+
+.dropbtn {
+    /*position: fixed;*/
+    background-color: #afdb38;
+    color: white;
+    font-family: 'Arvo', serif;
+    padding: 0 0 0 0;
+    border: none;
+    cursor: pointer;
+    width: 10em;
+    margin: 2px 1px 0 0;
+    /* no text */
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #9adb3a;
+    /*position: fixed
+    /* no text */
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 9.375em;
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+    /* no text */
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 4px 4px;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    font-family: Arial sans-serif;
+    /* no text */
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    border: 1px;
+    /* no text */
+    font-family: Arial sans-serif;
+    font-size: 1em;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.dropbtn {
+    background-color: #afdb38;
+    color: white;
+    padding: 10px 0 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 9.375em;
+    /*margin: 25px 25px 0 0; */
+    /* no text */
+
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #9adb3a;
+    /* no text */
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 9.375em;
+    margin: 0 5px 0 0;
+    padding: 1em 0 0.1em 0;
+    font-family: Arial sans-serif;
+    /* no text */
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    /* no text */
+    position: absolute;
+    margin: 5px 2px;
+    width: 9.375em;
+    background-color: #f1f1f1;
+    overflow: auto;
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    font-family: Arial sans-serif;
+    padding: 5px 2px;
+    text-decoration: none;
+    display: block;
+    /* no text */
+}
+
+/* Change color of dropdown links on hover */
+.dropdown a:hover {
+    background-color: #ddd;
+    font-size: 1em;
+    font-family: Arial sans-serif;
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+    /* no text */
+form {
+    clear: both;
+    display: block;
+    padding: 5em auto 0 auto;
+    width: 9.375em;
+    font-family: 'Arvo', serif;
+    margin: 60px auto 3px auto;
+
+}
+p {
+    font-family: 'Arvo', serif;
+
+}
+input {
+    font-family: 'Arvo', serif;
+    border: 1px solid #9adb3a;
+    margin: 1px auto 0 auto;
+    height: 2em;
+    display: inline-block;
+
+}
+ #submit {
+    display: block;
+     width: 10.3em;
+     height: 2em;
+    padding: 1em auto 0 auto;
+     margin: 10px auto 0 auto;
+    border: 1px solid #9adb3a;
+     text-decoration: none;
+     font-family: 'Arvo', serif;
+
+
+}
